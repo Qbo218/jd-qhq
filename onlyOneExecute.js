@@ -25,8 +25,8 @@ async function start() {
 
     try {
         await changeFiele();
-        //await exec("node executeOnce.js", { stdio: "inherit" });
-        await exec("node executeOnce.js >> result.txt")//根据返回内容判断进行通知
+        await exec("node executeOnce.js", { stdio: "inherit" });
+        //await exec("node executeOnce.js >> result.txt")//根据返回内容判断进行通知
     } catch (e) {
         console.log("执行异常:" + e);
     }
